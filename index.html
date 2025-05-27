@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generatore di Password Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for a more modern look */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1e293b; /* slate-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #34d399; /* emerald-400 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #10b981; /* emerald-500 */
+    }
+    /* Ensure body takes full height and has the gradient */
+    body, html, #root {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      background-color: #0f172a; /* slate-900 as fallback */
+    }
+
+    @keyframes modal-appear {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .animate-modal-appear {
+      animation: modal-appear 0.3s ease-out forwards;
+    }
+  </style>
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/generatore-di-password/assets/index-CSjQ6MNy.js"></script>
+</head>
+<body class="bg-gradient-to-br from-slate-900 to-purple-900">
+  <div id="root"></div>
+</body>
+</html><link rel="stylesheet" href="index.css">
