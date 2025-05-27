@@ -8,7 +8,7 @@ const App: React.FC = () => {
   const [appDescription, setAppDescription] = useState('');
 
   useEffect(() => {
-    fetch('/metadata.json')
+    fetch(`${import.meta.env.BASE_URL}metadata.json`)
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
